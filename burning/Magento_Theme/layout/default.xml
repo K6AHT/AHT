@@ -1,16 +1,6 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceBlock name="register-link" remove="true"/>
-        <referenceBlock name="wish-list-link" remove="true"/>
-        <referenceBlock name="catalog.compare.link" remove="true"/>
-        <referenceBlock name="my-account-link" remove="true"/>
-        <referenceBlock name="skip_to_content" remove="true"/>
-        <referenceBlock name="store_language" remove="true"/>
         <referenceBlock name="top.links" remove="true"/>
-        <referenceBlock name="header" remove="true"/>
-        <referenceBlock name="authorization-link" remove="true"/>
-        <referenceBlock name="footer" remove="true"/>
-        <referenceBlock name="advanced-search-link" remove="true"/>
 
     </body>
 </page>    
