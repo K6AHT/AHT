@@ -1,0 +1,141 @@
+& when (@media-common =true) {
+
+    //style default
+
+    // alert
+    .message-success {
+        .lib-message(success);
+        .lib-css(background, @color-white);
+        .lib-css(border, solid @size-1px @color-green-message );
+        .lib-css(text-align, center);
+        .lib-css(color, @color-green-message);
+        .lib-css(font-size, @font-size15);
+        .lib-css(font-family, @font-roboto-bold);
+    }
+
+    .message-error {
+        .lib-message(error);
+        .lib-css(background, @color-white);
+        .lib-css(border, solid @size-1px @color-red-validate );
+        .lib-css(text-align, center);
+        .lib-css(font-size, @font-size15);
+        .lib-css(font-family, @font-roboto-bold);
+    }
+
+    // h1 {
+    //     .lib-css(font-family, @font-lora-regular);
+    //     .lib-css(font-size, @font-size32);
+    // }
+
+    // h2 {
+    //     .lib-css(font-family, @font-lora-regular);
+    //     .lib-css(font-size, @font-size24);
+    // }
+
+    // h3 {
+    //     .lib-css(font-family, @font-lora-regular);
+    //     .lib-css(font-size, @font-size18);
+    // }
+
+    // h4 {
+    //     .lib-css(font-family, @font-roboto-bold);
+    //     .lib-css(font-size, @font-size15);
+    // }
+
+    a {
+        .lib-css(font-family, @font-roboto-regular);
+        .lib-css(color, @color-333);
+        .lib-css(text-decoration, none);
+        .lib-css(cursor, pointer);
+
+        &:hover {
+            .lib-css(color, @color-777);
+        }
+    }
+
+    p{
+        .lib-typography(
+            @_font-size: @font-size13,
+            @_color: @color-333,
+            @_font-family: @font-roboto-regular,
+            @_font-weight: @font-weight-400,
+            @_line-height: @line-height20,
+        )
+    }
+    
+    .la-times{
+        .lib-css(width, @width-14px);
+        .lib-css(height, @height-14px);
+    }
+
+    .la-facebook-f,
+    .la-instagram,
+    .la-twitter{
+        .lib-css(font-size, @font-size18);
+        .lib-css(line-height, @line-height30);
+        .lib-css(color, @color-424242);
+        &:hover{
+            .lib-css(color, @color-000);
+        }
+    }
+
+    
+    // cms block
+    .row {
+        .lib-css(display, flex);
+        
+        .col {
+            .lib-css(position, relative);
+
+            .col-content {
+                .lib-css(text-align, center);
+                .lib-css(position, absolute);
+                .lib-css(top, 50%);
+                .lib-css(left, 50%);
+                .lib-css(width, 100%);
+                .lib-css(transform, translate(-50%, -50%));
+                .lib-css(text-transform, uppercase);
+
+                a {
+                    .lib-css(font-family, @font-lora-bold);
+                    .lib-css(font-size, @font-size15);
+                    .lib-css(margin, auto);
+                    .lib-css(color, @color-white);
+                    &:hover{
+                        .lib-css(text-decoration, none);
+                    }
+                }
+            }
+        }
+    }
+
+    .banner-burning-one {
+        .lib-css(width, 330px);
+        .lib-css(height, 280px);
+
+        .banner-img {
+            .lib-css(position, relative);
+            .lib-css(width, 100%);
+        }
+    }
+
+    .button-banner {
+        .lib-button(@_button-background: @color-333,
+            @_button-color: @color-white,
+            @_button-font-family: @font-roboto-bold,
+            @_button-background-hover: @color-3b,
+            @_button-color-hover: @color-white,
+            @_button-background-active: @color-3b,
+            @_button-color-active: @color-white,
+            @_button-border: @size-2px solid @color-white,
+            @_button-border-hover: @size-2px solid @color-white);
+        .lib-css(width, 250px);
+        .lib-css(height, 50px);
+        .lib-css(padding, 7px 0);
+        .lib-css(position, absolute);
+        .lib-css(transform, translate(-50%, -50%));
+        .lib-css(top, 50%);
+        .lib-css(left, 50%);
+        .lib-css(display, flex);
+    }
+}
