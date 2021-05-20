@@ -1,6 +1,16 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="top.links" remove="true"/>
+        <referenceBlock remove="true" name="skip_to_content"/>
+        <referenceBlock remove="true" name="store_language"/>
+        <referenceBlock remove="true" name="top.links"/>
+        <referenceBlock remove="true" name="header.links"/>
 
+        <referenceContainer name="header.panel" label="Page Header Panel" htmlTag="div" htmlClass="panel header">
+        <block class="Magento\Framework\View\Element\Template" name="header.top" template="Magento_Theme::header-top.phtml"/>
+        </referenceContainer>
+         <referenceContainer name="header-wrapper">
+            <block class="Magento\Framework\View\Element\Template" name="minicart.new" after="-" template="Magento_Theme::cart.phtml"/>
+       </referenceContainer>
     </body>
-</page>    
+</page>
