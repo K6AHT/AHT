@@ -38,7 +38,8 @@
     }
 
     a.action.primary {
-        .lib-link-as-button();
+        // .lib-link-as-button();
+            
     }
 
     .action.primary {
@@ -93,6 +94,18 @@
                 @_button-border:@size-1px solid @color-e4,
                 @_button-font-size: @font-size13
             );
+        }
+        
+    }
+    
+    a{
+        .lib-css(font-family, @font-roboto-regular);
+        .lib-css(color, @color-333);
+        .lib-css(text-decoration, none);
+        .lib-css(cursor, pointer);
+
+        &:hover {
+            .lib-css(color, @color-777);
         }
     }
 }
