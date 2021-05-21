@@ -1,1 +1,79 @@
-/var/www/html/themek6/vendor/magento/theme-frontend-blank/web/css/source/_messages.less
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common =true) {
+
+    .message.info {
+        .lib-message-icon-inner(info);
+    }
+
+    .message.error {
+        .lib-message-icon-inner(error);
+
+        &.message-error {
+            >*:first-child:before {
+                content: none;
+            }
+
+            .lib-message(error);
+            .lib-css(background, @color-white);
+            .lib-css(border, solid @message__border-width @color-red-validate );
+            .lib-css(text-align, center);
+            .lib-css(font-size, @font-size15);
+            .lib-css(font-family, @font-roboto-bold);
+        }
+    }
+
+    .message.warning {
+        .lib-message-icon-inner(warning);
+    }
+
+    .message.notice {
+        .lib-message-icon-inner(notice);
+    }
+
+    .message.success {
+        .lib-message-icon-inner(success);
+
+        &.message-success {
+            >*:first-child:before {
+                content: none;
+            }
+
+            .lib-message(success);
+            .lib-css(background, @color-white);
+            .lib-css(border, solid @message__border-width @color-green-message );
+            .lib-css(text-align, center);
+            .lib-css(color, @color-green-message);
+            .lib-css(font-size, @font-size15);
+            .lib-css(font-family, @font-roboto-bold);
+        }
+
+
+    }
+
+    // .message-success {
+    //     .lib-message(success);
+    //     .lib-css(background, @color-white);
+    //     .lib-css(border, solid @message__border-width @color-green-message );
+    //     .lib-css(text-align, center);
+    //     .lib-css(color, @color-green-message);
+    //     .lib-css(font-size, @font-size15);
+    //     .lib-css(font-family, @font-roboto-bold);
+    // }
+
+    // .message-error {
+    //     .lib-message(error);
+    //     .lib-css(background, @color-white);
+    //     .lib-css(border, solid @message__border-width @color-red-validate );
+    //     .lib-css(text-align, center);
+    //     .lib-css(font-size, @font-size15);
+    //     .lib-css(font-family, @font-roboto-bold);
+    // }
+}
