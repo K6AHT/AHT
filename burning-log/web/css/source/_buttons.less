@@ -7,14 +7,14 @@
 //  Common
 //  _____________________________________________
 
-& when (@media-common = true) {
+& when (@media-common =true) {
 
     //  Using buttons mixins
     button,
     a.action.primary {
-        .lib-css(border-radius,0);
-        .lib-css(text-transform,uppercase);
-        .lib-css(height,@size-40);
+        .lib-css(border-radius, 0);
+        .lib-css(text-transform, uppercase);
+        .lib-css(height, @size-40);
     }
 
     button {
@@ -39,13 +39,14 @@
 
     a.action.primary {
         .lib-link-as-button();
-            
+
     }
 
     .action.primary {
         .lib-button-primary();
-        &.cart-button{
-            .lib-css(width,@size-180);
+
+        &.cart-button {
+            .lib-css(width, @size-180);
             .lib-button(
                 @_button-background: @color-green-default,
                 @_button-background-active: @color-green-standard,
@@ -57,55 +58,45 @@
                 @_button-font-size: @font-size13,
             );
         }
-        &.standard-button{
-            .lib-css(width,@size-140);
-            .lib-button(
-                @_button-font-family: @font-roboto-bold,
+
+        &.standard-button {
+            .lib-css(width, @size-140);
+            .lib-button(@_button-font-family: @font-roboto-bold,
                 @_button-font-size: @font-size13,
-                @_button-background:@color-white,
-                @_button-background-active: @color-white,
-                @_button-background-hover: @color-white,
-                @_button-color:@color-stand-black,
-                @_button-border:@size-2px solid @color-stand-black,
-            );
-            
-        }
-        &.standard-button-black{
-            .lib-css(width,@size-140);
-            .lib-button(
-                @_button-font-family: @font-roboto-bold,
-                @_button-font-size: @font-size13,
-                @_button-background:@color-stand-black,
-                @_button-background-active:@color-stand-black,
-                @_button-background-hover: @color-stand-black,
-                @_button-color:@color-white,
-                
-            );
-        }
-        &.button-adjust{
-            .lib-button(
                 @_button-background: @color-white,
+                @_button-background-active: @color-white,
+                @_button-background-hover: @color-3b,
+                @_button-color: @color-stand-black,
+                @_button-color-hover: @color-white,
+                @_button-border: @size-2px solid @color-stand-black,
+            );
+
+        }
+
+        &.standard-button-black {
+            .lib-css(width, @size-140);
+            .lib-button(@_button-font-family: @font-roboto-bold,
+                @_button-font-size: @font-size13,
+                @_button-background: @color-stand-black,
+                @_button-background-active: @color-stand-black,
+                @_button-background-hover: @color-stand-black,
+                @_button-color: @color-white,
+
+            );
+        }
+
+        &.button-adjust {
+            .lib-button(@_button-background: @color-white,
                 @_button-background-active: @color-f8,
                 @_button-background-hover: @color-f8,
                 @_button-color: @color-a9,
                 @_button-color-hover: @color-a9,
                 @_button-color-active: @color-a9,
                 @_button-font-family: @font-roboto-bold,
-                @_button-border:@size-1px solid @color-e4,
-                @_button-font-size: @font-size13
-            );
+                @_button-border: @size-1px solid @color-e4,
+                @_button-font-size: @font-size13 );
         }
-        
-    }
-    
-    // a{
-    //     .lib-css(font-family, @font-roboto-regular);
-    //     .lib-css(color, @color-333);
-    //     .lib-css(text-decoration, none);
-    //     .lib-css(cursor, pointer);
 
-    //     &:hover {
-    //         .lib-css(color, @color-777);
-    //     }
-    // }
+    }
+
 }
